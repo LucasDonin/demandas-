@@ -1,6 +1,6 @@
 <?php
 // Configurações do sistema de demandas.
-// A senha e o token NÃO ficam aqui: defina em config.local.php (fora do Git)
+// A senha, o token e o link da planilha NÃO ficam aqui: defina em config.local.php (fora do Git)
 // ou nas variáveis de ambiente DEMANDAS_SENHA e DEMANDAS_SYNC_TOKEN.
 // Veja config.local.exemplo.php.
 $config = [
@@ -13,7 +13,7 @@ $config = [
 
     // Link da planilha do Google. Para a sincronização automática funcionar,
     // a planilha precisa estar como "Qualquer pessoa com o link pode ver".
-    'planilha_url' => 'https://docs.google.com/spreadsheets/d/1yHPEz8u1CENM8MvCaIKERYRV4Mf4uRN-U6_JtwBvD1s/edit',
+    'planilha_url' => (string) (getenv('DEMANDAS_PLANILHA_URL') ?: ''),
 
     // Sincroniza sozinho ao abrir o sistema se a última sincronização tiver mais que X horas. 0 desliga.
     'auto_sync_horas' => 2,

@@ -37,7 +37,7 @@ Pode usar a senha em texto ou, melhor, um hash:
 
     php -r 'echo password_hash("sua-senha", PASSWORD_DEFAULT), PHP_EOL;'
 
-Enquanto nenhuma senha estiver definida, a tela de login avisa e ninguém entra. O token de `sync.php` segue a mesma regra (`sync_token` ou `DEMANDAS_SYNC_TOKEN`).
+Enquanto nenhuma senha estiver definida, a tela de login avisa e ninguém entra. O token de `sync.php` e o link da planilha seguem a mesma regra (`sync_token` ou `DEMANDAS_SYNC_TOKEN`; `planilha_url` ou `DEMANDAS_PLANILHA_URL`).
 
 ## Importação da planilha
 

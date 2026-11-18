@@ -6,6 +6,9 @@ return [
     //   php -r 'echo password_hash("sua-senha", PASSWORD_DEFAULT), PHP_EOL;'
     'senha' => '',
 
+    // Link da planilha do Google (fica fora do Git para não expor os dados).
+    'planilha_url' => '',
+
     // Token para chamar sync.php?token=... por um agendador web (opcional).
     'sync_token' => '',
 ];
